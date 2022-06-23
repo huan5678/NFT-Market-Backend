@@ -5,8 +5,8 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 
-import indexRouter from './routes/index';
-import userRouter from './routes/user';
+import indexRouter from './routes/index.router';
+import userRouter from './routes/user.router';
 
 class App {
   public app: express.Application;
@@ -32,7 +32,7 @@ class App {
 
   private routerSetup() {
     this.app.use('/', indexRouter);
-    this.app.use('api/user', userRouter);
+    this.app.use('/api/user', userRouter);
   }
 
   private errorHandler() {

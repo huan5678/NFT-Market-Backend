@@ -3,7 +3,7 @@ import validator from 'validator';
 import { User } from '../models';
 import { handleAppError, handleAppSuccess, passwordCheck, sendEmail } from '../utils';
 import { getLogger } from '@/utils/loggers';
-const logger = getLogger('INDEX_ROUTE');
+const logger = getLogger('USER_CONTROLLER');
 
 export interface UserRequest extends Request {
   user?: any;
@@ -11,7 +11,6 @@ export interface UserRequest extends Request {
 
 const userController = {
   userCreate: async (req: Request, res: Response, next: NextFunction) => {
-    logger.info('coming');
     let { email, password, confirmPassword, name } = req.body;
     if (!email || !password || !confirmPassword || !name) {
       return handleAppError(400, '欄位未正確填寫', next);

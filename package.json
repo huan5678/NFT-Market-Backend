@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "export NODE_OPTIONS='--trace-deprecation --abort-on-uncaught-exception' && export NODE_ENV=development && nodemon --exec ts-node ./bin/www.ts",
+    "start:win": "SET NODE_OPTIONS='--trace-deprecation --abort-on-uncaught-exception' && SET NODE_ENV=development && nodemon --exec ts-node ./bin/www.ts",
     "build": "sh etc/build.sh"
   },
   "dependencies": {
