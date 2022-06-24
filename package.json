@@ -25,6 +25,10 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.6.0",
+    "@openzeppelin/hardhat-upgrades": "^1.19.0",
     "@tsconfig/node16": "^1.0.0",
     "@types/bcryptjs": "^2.4.2",
     "@types/cookie-parser": "^1.4.2",
@@ -37,6 +41,10 @@
     "@types/node": "^16.10.2",
     "@types/nodemailer": "^6.4.4",
     "@types/validator": "^13.7.3",
+    "chai": "^4.3.6",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.9",
+    "hardhat": "^2.9.9",
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.15",
     "ts-node": "^10.2.1",
