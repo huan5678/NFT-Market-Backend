@@ -9,6 +9,7 @@ require('dotenv').config();
 const PRIVATE_KEY = process.env.METAMASK_PRIVATE_KEY;
 const ALCHEMY_API_URL = process.env.ALCHEMY_API_URL;
 const METAMASK_ACCOUNT = process.env.METAMASK_ACCOUNT;
+const INFURA_RINKEBY_KEY = process.env.INFURA_RINKEBY_KEY;
 
 module.exports = {
   solidity: '0.8.1',
@@ -37,9 +38,12 @@ module.exports = {
         '0x47e179ec197488593b187f80a00eb0da91f1b9d0b13f8733639f19c30a34926a',
       ],
     },
+    hardhat: {
+      chainId: 1337,
+    },
     rinkeby: {
-      url: ALCHEMY_API_URL,
-      account: [`${PRIVATE_KEY}`],
+      url: INFURA_RINKEBY_KEY,
+      accounts: [`${PRIVATE_KEY}`],
     },
   },
   paths: {

@@ -84,6 +84,42 @@
         "ERC721"
       ]
     },
+    "C:\\Design\\Web\\layout2022-hexschool\\project-blockchain\\NFT-Market-Backend\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1656032226313,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
     "C:\\Design\\Web\\layout2022-hexschool\\project-blockchain\\NFT-Market-Backend\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721.sol": {
       "lastModificationDate": 1656037285091,
       "contentHash": "cd8e72e5859bddd5fd26b2fb5c51c846",
@@ -379,8 +415,8 @@
       ]
     },
     "C:\\Design\\Web\\layout2022-hexschool\\project-blockchain\\NFT-Market-Backend\\src\\contracts\\Token.sol": {
-      "lastModificationDate": 1656050617691,
-      "contentHash": "4a4d00409fadeea552aff55bd99ebfd1",
+      "lastModificationDate": 1656314734941,
+      "contentHash": "6f2a46acb7316e5a3c9ea3bdb0f817a7",
       "sourceName": "src/contracts/Token.sol",
       "solcConfig": {
         "version": "0.8.1",
@@ -414,42 +450,6 @@
       ],
       "artifacts": [
         "Token"
-      ]
-    },
-    "C:\\Design\\Web\\layout2022-hexschool\\project-blockchain\\NFT-Market-Backend\\node_modules\\hardhat\\console.sol": {
-      "lastModificationDate": 1656032226313,
-      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
-      "sourceName": "hardhat/console.sol",
-      "solcConfig": {
-        "version": "0.8.1",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        ">=0.4.22 <0.9.0"
-      ],
-      "artifacts": [
-        "console"
       ]
     }
   }
