@@ -27,6 +27,7 @@ module.exports = {
       version: '0.8.1',
     },
   ],
+  defaultNetwork: 'hardhat',
   networks: {
     local: {
       url: 'http://127.0.0.1:8545',
@@ -40,6 +41,10 @@ module.exports = {
     },
     hardhat: {
       chainId: 1337,
+      mining: {
+        auto: false,
+        interval: [3000, 6000],
+      },
     },
     rinkeby: {
       url: INFURA_RINKEBY_KEY,
